@@ -1,0 +1,66 @@
+.form__container {
+  max-width: 800px;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  padding-bottom: 18px;
+  border-radius: 8px;
+}
+.form-head__section {
+  margin: 0px 24px;
+  position: relative;
+}
+.save-btn {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+.submit-btn {
+  position: absolute;
+  top: -54px;
+  right: 18px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+}
+.opacity-50 {
+  opacity: 0.5;
+}
+.form-head__number {
+  display: flex;
+  padding-top: 14px;
+}
+.active-step {
+  background-color: green;
+  color: white;
+}
+.step {
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-head__number :nth-child(2) {
+  margin-left: 6px;
+}
+.form-head__section div:nth-child(2) {
+  padding: 14px 0px;
+}
+.form-head__section :nth-child(2) p {
+  font-size: small;
+}

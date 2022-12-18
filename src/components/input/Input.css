@@ -1,0 +1,20 @@
+.input__box {
+  padding: 12px 0px;
+  width: 100%;
+}
+.input__box p {
+  font-weight: 600;
+  font-size: smaller;
+}
+.input__box input {
+  margin-top: 8px;
+  width: 80%;
+  height: 34px;
+  border-radius: 8px;
+  outline: none;
+  border: 1px solid black;
+  padding: 0px 8px;
+}
+.input__box span {
+  color: red;
+}

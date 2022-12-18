@@ -1,0 +1,10 @@
+.form__input__section2-outer {
+  margin: 0px 28px;
+}
+
+.form__input__section2 {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row: 3;
+  padding-bottom: 16px;
+}

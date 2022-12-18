@@ -1,0 +1,61 @@
+.form__input__section {
+  margin: 0px 24px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-row: 3;
+  padding-bottom: 16px;
+}
+.br {
+  margin: 0px 26px;
+}
+.life-stage__section {
+  padding: 24px 0px;
+  margin: 0px 24px;
+}
+.life-stage__section div {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+.active__lifestage {
+  background-color: green;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 22px;
+  font-size: smaller;
+  font-weight: 600;
+  cursor: pointer;
+}
+.lifestage {
+  padding: 6px 8px;
+  border-radius: 22px;
+  background-color: #f1f1f1;
+  font-size: smaller;
+  font-weight: 600;
+  cursor: pointer;
+}
+.children__section {
+  padding: 10px 0px;
+  margin: 0px 24px;
+}
+
+.children__section div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+}
+.children__section div button {
+  border-radius: 50%;
+  border: none;
+  height: 30px;
+  width: 30px;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+}
+.children__section div span {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 6px 16px;
+}
