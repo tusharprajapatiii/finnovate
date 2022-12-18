@@ -104,27 +104,8 @@ function Form() {
     }
   };
 
-  const onSubmit = () => {
-    const { fullname, email, mobile, birth, PAN, child, spouse } = formData;
-    if (child.length > 0) {
-      if (
-        !fullname ||
-        !email ||
-        !mobile ||
-        !birth ||
-        !child ||
-        !PAN ||
-        !spouse
-      ) {
-        window.alert("fill all fields");
-        return;
-      }
-    }
-
-    if (!fullname || !email || !mobile || !birth || !PAN || !spouse) {
-      window.alert("fill all fields");
-      return;
-    }
+  const onSubmit = (e) => {
+    e.preventDefault();
 
     axios
       .post("https://dummy.restapiexample.com/api/v1/create", formData)
@@ -163,7 +144,7 @@ function Form() {
           <h4>{step === 0 ? `Knowing you!` : `lets talk about family`}</h4>
           <p>You, your age and your family</p>
         </div>
-        {step === 0 ? (
+        {step === 0 && (
           <button
             onClick={onSave}
             className={`${
@@ -183,10 +164,6 @@ function Form() {
             }
           >
             Save
-          </button>
-        ) : (
-          <button className="save-btn" onClick={() => onSubmit()}>
-            submit
           </button>
         )}
       </div>
@@ -218,6 +195,7 @@ function Form() {
           onChangeChildren={onChangeChildren}
           onChangeFather={onChangeFather}
           onChangeMother={onChangeMother}
+          onSubmit={onSubmit}
         />
       )}
       {/* </form> */}
