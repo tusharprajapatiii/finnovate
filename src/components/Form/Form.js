@@ -157,12 +157,7 @@ function Form() {
           ) : (
             <span className={step === 0 ? "active-step step" : "step"}>1</span>
           )}
-          <span
-            onClick={() => setStep(1)}
-            className={step === 1 ? "active-step step" : "step"}
-          >
-            2
-          </span>
+          <span className={step === 1 ? "active-step step" : "step"}>2</span>
         </div>
         <div>
           <h4>{step === 0 ? `Knowing you!` : `lets talk about family`}</h4>
